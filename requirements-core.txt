@@ -1,0 +1,5 @@
+# Cadangan bila pandas-ta-classic gagal dipasang: mesin otomatis memakai indikator pandas murni.
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+pyyaml>=6.0

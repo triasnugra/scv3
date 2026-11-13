@@ -1,0 +1,98 @@
+# ============================================================
+#  KONFIGURASI MESIN SCALPING (berbasis materi Eliz)
+#  Ubah angka di sini, commit, lalu workflow berikutnya otomatis memakainya.
+# ============================================================
+
+# Urutan sumber data. Binance "data-api.binance.vision" dipakai pertama karena
+# tidak diblokir dari server GitHub Actions (api.binance.com sering 451 dari AS).
+exchange_priority: [binance_vision, okx, bybit, binance]
+
+symbols:        # format BTCUSDT (otomatis dikonversi untuk tiap bursa)
+  - BTCUSDT
+  - ETHUSDT
+  - SOLUSDT
+  - XRPUSDT
+  - DOGEUSDT
+  - PEPEUSDT
+  - INJUSDT
+  - LTCUSDT
+  - HBARUSDT
+  - LINKUSDT
+  - TRBUSDT
+
+timeframes:
+  ltf: 15m      # eksekusi / trigger (juga satu-satunya data yang diunduh)
+  htf: 1h       # range & level (Eliz: "work on ranges in H1")
+  bias: 4h      # bias arah ("scalp long in long season, scalp short in short season")
+
+candles:
+  live_bars: 1500        # jumlah candle 15m yang diunduh tiap scan (~15 hari)
+
+# Definisi RANGE (box) di H1
+range:
+  lookback_htf: 36       # jumlah candle H1 pembentuk range (36 jam)
+  min_touches: 2         # minimal sentuhan di tiap sisi (high & low)
+  touch_atr: 0.35        # toleransi sentuhan (x ATR H1)
+  min_width_atr: 2.0     # lebar range minimal (x ATR H1)
+  max_width_atr: 9.0     # lebar range maksimal (x ATR H1)
+  max_adx: 28            # ADX H1 di atas ini = trending, bukan range
+
+# Definisi DEVIATION / STOP RUN / liquidity sweep
+sweep:
+  window: 3              # candle yg boleh dipakai utk sweep -> reclaim
+  min_depth_atr: 0.05    # sweep minimal (x ATR 15m) supaya dianggap menembus
+  max_depth_atr: 1.6     # lebih dalam dari ini = breakdown, bukan deviation
+  min_close_pos: 0.5     # posisi close di dalam candle reclaim (0..1)
+
+breakout_retest:
+  lookback_htf_bars: 12  # setelah breakout H1, retest valid selama N candle H1
+  retest_tol_atr: 0.25   # toleransi sentuh ulang level (x ATR 15m)
+  invalid_atr: 0.2       # close H1 kembali ke dalam range > ini = breakout gagal
+
+squeeze:
+  bb_len: 20
+  bb_std: 2.0
+  pct_window: 200        # window peringkat lebar BB
+  squeeze_pct: 0.2       # lebar BB di bawah persentil ini = squeeze
+  lookback_bars: 8       # squeeze harus terjadi dalam N candle terakhir
+  min_relvol: 1.5        # volume ekspansi minimal (x rata-rata 20)
+
+# Risiko per trade (invalidasi kecil = prinsip utama Eliz)
+risk:
+  sl_buffer_atr: 0.2     # SL di luar ekstrem sweep + buffer ini (x ATR 15m)
+  min_sl_atr: 0.8        # SL tidak boleh lebih rapat dari ini (noise)
+  max_sl_pct: 1.5        # SL maks 1.5% dari entry (scalp leverage: SL 2-4% = batas mutlak)
+  max_cost_r: 0.30       # tolak bila fee+slippage pulang-pergi > 0.30R (SL terlalu rapat utk biaya)
+  min_rr_tp1: 0.8        # TP1 boleh di tengah range (parsial 50% + SL ke BE)
+  min_rr_tp2: 2.0
+  tp1_fraction: 0.5      # 50% posisi ditutup di TP1, sisa SL geser ke BE
+  max_hold_bars: 48      # maks 48 candle 15m (12 jam) lalu ditutup (timeout)
+
+signal:
+  min_score: 60          # skor konfluensi minimum (0-100)
+  lookback_bars: 3       # scan juga N candle terakhir bila cron GitHub telat
+  max_drift_atr: 0.35    # harga sudah lari > ini dari entry (searah profit) = telat, dibuang
+  max_adverse_r: 0.5     # harga sudah mundur > 0.5R ke arah SL = dibuang
+  cooldown_bars: 8       # jeda per simbol+arah (candle 15m)
+  max_open_total: 6      # maks sinyal terbuka bersamaan
+  min_rel_volume: 0.6    # volume candle trigger minimal (hindari pasar mati)
+
+account:                 # hanya untuk ukuran posisi yang disarankan
+  equity_usd: 1000
+  risk_pct: 1.0
+  max_leverage: 10
+
+costs:                   # dipakai backtest & pelacak hasil
+  fee_bps: 5             # per sisi (taker)
+  slippage_bps: 3        # per sisi
+
+setups:
+  range_deviation: true  # A. deviasi high/low range H1 lalu reclaim
+  level_sweep: true      # B. stop run PDH/PDL, Monday high/low, PWH/PWL
+  breakout_retest: true  # C. breakout range H1 lalu retest
+  squeeze_expansion: true  # D. squeeze Bollinger lalu ekspansi
+
+backtest:
+  days: 45
+  warmup_bars: 400
+  max_trades_listed: 500

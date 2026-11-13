@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliz Scalp Engine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <div>
+      <h1>Eliz Scalp Engine</h1>
+      <p class="sub">Range · Deviasi · Stop Run · Trigger — scalping dengan invalidasi kecil</p>
+    </div>
+    <div class="status">
+      <span id="mode" class="pill">memuat…</span>
+      <span id="updated" class="muted">—</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="demo-banner" class="banner" hidden>
+    MODE DEMO: data sintetis, bukan harga pasar. Hasil di halaman ini tidak punya arti untuk trading.
+  </div>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section>
+    <h2>Sinyal aktif</h2>
+    <div id="active" class="cards"></div>
+  </section>
+
+  <section>
+    <h2>Pantauan pasar <small class="muted">— tunggu trigger, jangan kejar harga</small></h2>
+    <div class="tablewrap"><table id="market"></table></div>
+  </section>
+
+  <section>
+    <h2>Performa</h2>
+    <div class="grid2">
+      <div class="panel"><h3>Live (sinyal yang sudah ditutup)</h3><div id="eq-live"></div><div id="st-live"></div></div>
+      <div class="panel"><h3>Backtest <span id="bt-span" class="muted"></span></h3><div id="eq-bt"></div><div id="st-bt"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Riwayat sinyal</h2>
+    <div class="tablewrap"><table id="history"></table></div>
+  </section>
+
+  <section>
+    <h2>Diagnostik</h2>
+    <div class="grid2">
+      <div class="panel"><h3>Sumber data</h3><div id="feeds"></div></div>
+      <div class="panel"><h3>Kandidat yang disaring</h3><div id="filtered"></div>
+        <h3 style="margin-top:14px">Asumsi backtest</h3><ul id="assump" class="muted"></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  Edukasi &amp; riset, bukan nasihat finansial. Kripto berisiko tinggi; backtest tidak menjamin hasil masa depan.
+  Selalu pasang stop loss dan batasi risiko per trade.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
