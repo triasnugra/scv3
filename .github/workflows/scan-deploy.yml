@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
-      STATE_DIR: ${{ inputs.demo && format('{0}/state_demo', runner.temp) || 'state' }}
+      STATE_DIR: ${{ inputs.demo && '/tmp/state_demo' || 'state' }}
     steps:
       - uses: actions/checkout@v4
         with:
