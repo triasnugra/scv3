@@ -1,0 +1,14 @@
+{
+ "version": "1.0.0",
+ "updated": "2026-11-13T07:15:47.755547+00:00",
+ "mode": "live",
+ "ltf": "15m",
+ "htf": "1h",
+ "min_score": 60,
+ "setups": {
+  "range_deviation": "Deviasi Range",
+  "level_sweep": "Stop Run Level",
+  "breakout_retest": "Breakout-Retest",
+  "squeeze_expansion": "Squeeze Ekspansi"
+ }
+}

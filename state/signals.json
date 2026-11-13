@@ -1,0 +1,19 @@
+{
+ "updated": "2026-11-13T07:15:47.755547+00:00",
+ "mode": "live",
+ "signals": [],
+ "stats": {
+  "overall": {
+   "n": 0,
+   "win_rate": null,
+   "avg_r": null,
+   "total_r": 0.0,
+   "profit_factor": null
+  },
+  "max_drawdown_r": 0.0,
+  "equity_r": [],
+  "by_side": {},
+  "by_setup": {},
+  "by_symbol": {}
+ }
+}
