@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T01:43:32.169929+00:00",
+ "updated": "2026-11-18T09:10:30.379073+00:00",
  "mode": "live",
  "signals": [
   {
@@ -35,25 +35,51 @@
     "leverage_x": 1.28,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
-   "r": null,
-   "bars": 0,
-   "closed_at": null,
+   "status": "LOSS",
+   "r": -1.2051,
+   "bars": 15,
+   "closed_at": "2026-11-18T05:15:00+00:00",
    "created_at": "2026-11-18T01:43:32.169929+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 0,
-   "win_rate": null,
-   "avg_r": null,
-   "total_r": 0.0,
-   "profit_factor": null
+   "n": 1,
+   "win_rate": 0.0,
+   "avg_r": -1.205,
+   "total_r": -1.21,
+   "profit_factor": 0.0
   },
-  "max_drawdown_r": 0.0,
-  "equity_r": [],
-  "by_side": {},
-  "by_setup": {},
-  "by_symbol": {}
+  "max_drawdown_r": 1.21,
+  "equity_r": [
+   -1.205
+  ],
+  "by_side": {
+   "short": {
+    "n": 1,
+    "win_rate": 0.0,
+    "avg_r": -1.205,
+    "total_r": -1.21,
+    "profit_factor": 0.0
+   }
+  },
+  "by_setup": {
+   "level_sweep": {
+    "n": 1,
+    "win_rate": 0.0,
+    "avg_r": -1.205,
+    "total_r": -1.21,
+    "profit_factor": 0.0
+   }
+  },
+  "by_symbol": {
+   "XRPUSDT": {
+    "n": 1,
+    "win_rate": 0.0,
+    "avg_r": -1.205,
+    "total_r": -1.21,
+    "profit_factor": 0.0
+   }
+  }
  }
 }
