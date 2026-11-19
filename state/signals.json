@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T15:40:11.163650+00:00",
+ "updated": "2026-11-19T22:45:48.253931+00:00",
  "mode": "live",
  "signals": [
   {
@@ -73,9 +73,9 @@
     "leverage_x": 0.76,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
+   "status": "TP1",
    "r": null,
-   "bars": 0,
+   "bars": 29,
    "closed_at": null,
    "created_at": "2026-11-19T15:40:11.163650+00:00"
   },
@@ -109,32 +109,70 @@
     "leverage_x": 1.09,
     "risk_usd": 10.0
    },
+   "status": "BE",
+   "r": 0.7657,
+   "bars": 9,
+   "closed_at": "2026-11-19T17:45:00+00:00",
+   "created_at": "2026-11-19T15:40:11.163650+00:00"
+  },
+  {
+   "id": "HBARUSDT-breakout_retest-short-202611192230",
+   "symbol": "HBARUSDT",
+   "setup": "breakout_retest",
+   "side": "short",
+   "level_name": "Breakdown H1 (retest)",
+   "ts": "2026-11-19T22:30:00+00:00",
+   "bar_close": "2026-11-19T22:45:00+00:00",
+   "entry": 0.05423,
+   "sl": 0.05459237456777208,
+   "tp1": 0.05386762543222792,
+   "tp2": 0.053505250864455844,
+   "rr1": 1.0,
+   "rr2": 2.0,
+   "tp1_basis": "1R",
+   "tp2_basis": "2.0R",
+   "sl_pct": 0.668,
+   "atr": 0.0004118728388603833,
+   "score": 81,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+8 candle trigger kuat",
+    "+8 EMA20/50 searah"
+   ],
+   "size": {
+    "qty": 27595.8,
+    "notional_usd": 1496.52,
+    "leverage_x": 1.5,
+    "risk_usd": 10.0
+   },
    "status": "OPEN",
    "r": null,
    "bars": 0,
    "closed_at": null,
-   "created_at": "2026-11-19T15:40:11.163650+00:00"
+   "created_at": "2026-11-19T22:45:48.253931+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 1,
-   "win_rate": 0.0,
-   "avg_r": -1.205,
-   "total_r": -1.21,
-   "profit_factor": 0.0
+   "n": 2,
+   "win_rate": 50.0,
+   "avg_r": -0.22,
+   "total_r": -0.44,
+   "profit_factor": 0.64
   },
   "max_drawdown_r": 1.21,
   "equity_r": [
-   -1.205
+   -1.205,
+   -0.439
   ],
   "by_side": {
    "short": {
-    "n": 1,
-    "win_rate": 0.0,
-    "avg_r": -1.205,
-    "total_r": -1.21,
-    "profit_factor": 0.0
+    "n": 2,
+    "win_rate": 50.0,
+    "avg_r": -0.22,
+    "total_r": -0.44,
+    "profit_factor": 0.64
    }
   },
   "by_setup": {
@@ -144,9 +182,23 @@
     "avg_r": -1.205,
     "total_r": -1.21,
     "profit_factor": 0.0
+   },
+   "squeeze_expansion": {
+    "n": 1,
+    "win_rate": 100.0,
+    "avg_r": 0.766,
+    "total_r": 0.77,
+    "profit_factor": 999.0
    }
   },
   "by_symbol": {
+   "DOGEUSDT": {
+    "n": 1,
+    "win_rate": 100.0,
+    "avg_r": 0.766,
+    "total_r": 0.77,
+    "profit_factor": 999.0
+   },
    "XRPUSDT": {
     "n": 1,
     "win_rate": 0.0,
