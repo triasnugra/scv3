@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T06:04:20.669014+00:00",
+ "updated": "2026-11-19T15:40:11.163650+00:00",
  "mode": "live",
  "signals": [
   {
@@ -40,6 +40,80 @@
    "bars": 15,
    "closed_at": "2026-11-18T05:15:00+00:00",
    "created_at": "2026-11-18T01:43:32.169929+00:00"
+  },
+  {
+   "id": "LINKUSDT-squeeze_expansion-short-202611191515",
+   "symbol": "LINKUSDT",
+   "setup": "squeeze_expansion",
+   "side": "short",
+   "level_name": "BB Lower",
+   "ts": "2026-11-19T15:15:00+00:00",
+   "bar_close": "2026-11-19T15:30:00+00:00",
+   "entry": 9.097,
+   "sl": 9.216158901951864,
+   "tp1": 8.886,
+   "tp2": 8.574,
+   "rr1": 1.77,
+   "rr2": 4.39,
+   "tp1_basis": "PDL",
+   "tp2_basis": "PWL",
+   "sl_pct": 1.31,
+   "atr": 0.04529450975932289,
+   "score": 86,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+10 volume ekspansi 3.8x",
+    "+8 candle trigger kuat",
+    "+8 RR TP2 4.4"
+   ],
+   "size": {
+    "qty": 83.9216,
+    "notional_usd": 763.43,
+    "leverage_x": 0.76,
+    "risk_usd": 10.0
+   },
+   "status": "OPEN",
+   "r": null,
+   "bars": 0,
+   "closed_at": null,
+   "created_at": "2026-11-19T15:40:11.163650+00:00"
+  },
+  {
+   "id": "DOGEUSDT-squeeze_expansion-short-202611191515",
+   "symbol": "DOGEUSDT",
+   "setup": "squeeze_expansion",
+   "side": "short",
+   "level_name": "BB Lower",
+   "ts": "2026-11-19T15:15:00+00:00",
+   "bar_close": "2026-11-19T15:30:00+00:00",
+   "entry": 0.05902,
+   "sl": 0.05956274743650469,
+   "tp1": 0.058,
+   "tp2": 0.05769,
+   "rr1": 1.88,
+   "rr2": 2.45,
+   "tp1_basis": "Monday Low",
+   "tp2_basis": "Range Low",
+   "sl_pct": 0.92,
+   "atr": 0.0002587371825234626,
+   "score": 70,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+10 volume ekspansi 2.5x"
+   ],
+   "size": {
+    "qty": 18424.8,
+    "notional_usd": 1087.43,
+    "leverage_x": 1.09,
+    "risk_usd": 10.0
+   },
+   "status": "OPEN",
+   "r": null,
+   "bars": 0,
+   "closed_at": null,
+   "created_at": "2026-11-19T15:40:11.163650+00:00"
   }
  ],
  "stats": {
