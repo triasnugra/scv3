@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T22:45:48.253931+00:00",
+ "updated": "2026-11-20T03:47:05.382507+00:00",
  "mode": "live",
  "signals": [
   {
@@ -73,10 +73,10 @@
     "leverage_x": 0.76,
     "risk_usd": 10.0
    },
-   "status": "TP1",
-   "r": null,
-   "bars": 29,
-   "closed_at": null,
+   "status": "TIMEOUT",
+   "r": 1.5982,
+   "bars": 48,
+   "closed_at": "2026-11-20T03:30:00+00:00",
    "created_at": "2026-11-19T15:40:11.163650+00:00"
   },
   {
@@ -146,36 +146,45 @@
     "leverage_x": 1.5,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
-   "r": null,
-   "bars": 0,
-   "closed_at": null,
+   "status": "BE",
+   "r": 0.2606,
+   "bars": 11,
+   "closed_at": "2026-11-20T01:30:00+00:00",
    "created_at": "2026-11-19T22:45:48.253931+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 2,
-   "win_rate": 50.0,
-   "avg_r": -0.22,
-   "total_r": -0.44,
-   "profit_factor": 0.64
+   "n": 4,
+   "win_rate": 75.0,
+   "avg_r": 0.355,
+   "total_r": 1.42,
+   "profit_factor": 2.18
   },
   "max_drawdown_r": 1.21,
   "equity_r": [
    -1.205,
-   -0.439
+   -0.439,
+   -0.179,
+   1.419
   ],
   "by_side": {
    "short": {
-    "n": 2,
-    "win_rate": 50.0,
-    "avg_r": -0.22,
-    "total_r": -0.44,
-    "profit_factor": 0.64
+    "n": 4,
+    "win_rate": 75.0,
+    "avg_r": 0.355,
+    "total_r": 1.42,
+    "profit_factor": 2.18
    }
   },
   "by_setup": {
+   "breakout_retest": {
+    "n": 1,
+    "win_rate": 100.0,
+    "avg_r": 0.261,
+    "total_r": 0.26,
+    "profit_factor": 999.0
+   },
    "level_sweep": {
     "n": 1,
     "win_rate": 0.0,
@@ -184,10 +193,10 @@
     "profit_factor": 0.0
    },
    "squeeze_expansion": {
-    "n": 1,
+    "n": 2,
     "win_rate": 100.0,
-    "avg_r": 0.766,
-    "total_r": 0.77,
+    "avg_r": 1.182,
+    "total_r": 2.36,
     "profit_factor": 999.0
    }
   },
@@ -197,6 +206,20 @@
     "win_rate": 100.0,
     "avg_r": 0.766,
     "total_r": 0.77,
+    "profit_factor": 999.0
+   },
+   "HBARUSDT": {
+    "n": 1,
+    "win_rate": 100.0,
+    "avg_r": 0.261,
+    "total_r": 0.26,
+    "profit_factor": 999.0
+   },
+   "LINKUSDT": {
+    "n": 1,
+    "win_rate": 100.0,
+    "avg_r": 1.598,
+    "total_r": 1.6,
     "profit_factor": 999.0
    },
    "XRPUSDT": {
