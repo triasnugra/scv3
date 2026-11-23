@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:42:10.165885+00:00",
+ "updated": "2026-11-23T22:55:26.875062+00:00",
  "mode": "live",
  "signals": [
   {
@@ -224,6 +224,44 @@
    "bars": 7,
    "closed_at": "2026-11-20T14:00:00+00:00",
    "created_at": "2026-11-20T12:19:56.415002+00:00"
+  },
+  {
+   "id": "XRPUSDT-level_sweep-short-202611232215",
+   "symbol": "XRPUSDT",
+   "setup": "level_sweep",
+   "side": "short",
+   "level_name": "PDH",
+   "ts": "2026-11-23T22:15:00+00:00",
+   "bar_close": "2026-11-23T22:30:00+00:00",
+   "entry": 0.9387,
+   "sl": 0.9453239240655243,
+   "tp1": 0.9320760759344756,
+   "tp2": 0.9118,
+   "rr1": 1.0,
+   "rr2": 4.06,
+   "tp1_basis": "1R",
+   "tp2_basis": "PDL",
+   "sl_pct": 0.706,
+   "atr": 0.00661962032762225,
+   "score": 71,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+8 candle trigger kuat",
+    "+8 RR TP2 4.1",
+    "-10 volume sepi"
+   ],
+   "size": {
+    "qty": 1509.68,
+    "notional_usd": 1417.14,
+    "leverage_x": 1.42,
+    "risk_usd": 10.0
+   },
+   "status": "OPEN",
+   "r": null,
+   "bars": 0,
+   "closed_at": null,
+   "created_at": "2026-11-23T22:55:26.875062+00:00"
   }
  ],
  "stats": {
