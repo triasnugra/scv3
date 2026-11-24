@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:55:26.875062+00:00",
+ "updated": "2026-11-24T06:36:06.222805+00:00",
  "mode": "live",
  "signals": [
   {
@@ -257,37 +257,38 @@
     "leverage_x": 1.42,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
-   "r": null,
-   "bars": 0,
-   "closed_at": null,
+   "status": "LOSS",
+   "r": -1.2267,
+   "bars": 9,
+   "closed_at": "2026-11-24T00:45:00+00:00",
    "created_at": "2026-11-23T22:55:26.875062+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 6,
-   "win_rate": 66.7,
-   "avg_r": 0.109,
-   "total_r": 0.65,
-   "profit_factor": 1.28
+   "n": 7,
+   "win_rate": 57.1,
+   "avg_r": -0.082,
+   "total_r": -0.57,
+   "profit_factor": 0.84
   },
-  "max_drawdown_r": 1.21,
+  "max_drawdown_r": 2.37,
   "equity_r": [
    -1.205,
    -0.439,
    -0.179,
    1.419,
    1.801,
-   0.653
+   0.653,
+   -0.574
   ],
   "by_side": {
    "short": {
-    "n": 6,
-    "win_rate": 66.7,
-    "avg_r": 0.109,
-    "total_r": 0.65,
-    "profit_factor": 1.28
+    "n": 7,
+    "win_rate": 57.1,
+    "avg_r": -0.082,
+    "total_r": -0.57,
+    "profit_factor": 0.84
    }
   },
   "by_setup": {
@@ -299,10 +300,10 @@
     "profit_factor": 999.0
    },
    "level_sweep": {
-    "n": 1,
+    "n": 2,
     "win_rate": 0.0,
-    "avg_r": -1.205,
-    "total_r": -1.21,
+    "avg_r": -1.216,
+    "total_r": -2.43,
     "profit_factor": 0.0
    },
    "squeeze_expansion": {
@@ -350,10 +351,10 @@
     "profit_factor": 999.0
    },
    "XRPUSDT": {
-    "n": 1,
+    "n": 2,
     "win_rate": 0.0,
-    "avg_r": -1.205,
-    "total_r": -1.21,
+    "avg_r": -1.216,
+    "total_r": -2.43,
     "profit_factor": 0.0
    }
   }
