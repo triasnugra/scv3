@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:20:18.054354+00:00",
+ "updated": "2026-11-26T21:46:34.936306+00:00",
  "mode": "live",
  "signals": [
   {
@@ -327,22 +327,22 @@
     "leverage_x": 1.76,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
-   "r": null,
-   "bars": 0,
-   "closed_at": null,
+   "status": "LOSS",
+   "r": -1.2813,
+   "bars": 7,
+   "closed_at": "2026-11-26T14:00:00+00:00",
    "created_at": "2026-11-26T12:20:18.054354+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 8,
-   "win_rate": 62.5,
-   "avg_r": -0.037,
-   "total_r": -0.29,
-   "profit_factor": 0.92
+   "n": 9,
+   "win_rate": 55.6,
+   "avg_r": -0.175,
+   "total_r": -1.58,
+   "profit_factor": 0.68
   },
-  "max_drawdown_r": 2.37,
+  "max_drawdown_r": 3.38,
   "equity_r": [
    -1.205,
    -0.439,
@@ -351,15 +351,16 @@
    1.801,
    0.653,
    -0.574,
-   -0.294
+   -0.294,
+   -1.575
   ],
   "by_side": {
    "short": {
-    "n": 8,
-    "win_rate": 62.5,
-    "avg_r": -0.037,
-    "total_r": -0.29,
-    "profit_factor": 0.92
+    "n": 9,
+    "win_rate": 55.6,
+    "avg_r": -0.175,
+    "total_r": -1.58,
+    "profit_factor": 0.68
    }
   },
   "by_setup": {
@@ -371,11 +372,11 @@
     "profit_factor": 999.0
    },
    "level_sweep": {
-    "n": 3,
-    "win_rate": 33.3,
-    "avg_r": -0.717,
-    "total_r": -2.15,
-    "profit_factor": 0.11
+    "n": 4,
+    "win_rate": 25.0,
+    "avg_r": -0.858,
+    "total_r": -3.43,
+    "profit_factor": 0.08
    },
    "squeeze_expansion": {
     "n": 4,
@@ -413,6 +414,13 @@
     "avg_r": 1.598,
     "total_r": 1.6,
     "profit_factor": 999.0
+   },
+   "LTCUSDT": {
+    "n": 1,
+    "win_rate": 0.0,
+    "avg_r": -1.281,
+    "total_r": -1.28,
+    "profit_factor": 0.0
    },
    "PEPEUSDT": {
     "n": 1,
