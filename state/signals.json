@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T03:06:18.025531+00:00",
+ "updated": "2026-11-26T12:20:18.054354+00:00",
  "mode": "live",
  "signals": [
   {
@@ -292,20 +292,55 @@
     "leverage_x": 1.38,
     "risk_usd": 10.0
    },
+   "status": "BE",
+   "r": 0.2795,
+   "bars": 24,
+   "closed_at": "2026-11-26T09:00:00+00:00",
+   "created_at": "2026-11-26T03:06:18.025531+00:00"
+  },
+  {
+   "id": "LTCUSDT-level_sweep-short-202611261200",
+   "symbol": "LTCUSDT",
+   "setup": "level_sweep",
+   "side": "short",
+   "level_name": "Monday High",
+   "ts": "2026-11-26T12:00:00+00:00",
+   "bar_close": "2026-11-26T12:15:00+00:00",
+   "entry": 43.52,
+   "sl": 43.767548230830776,
+   "tp1": 43.27245176916923,
+   "tp2": 43.02490353833846,
+   "rr1": 1.0,
+   "rr2": 2.0,
+   "tp1_basis": "1R",
+   "tp2_basis": "2.0R",
+   "sl_pct": 0.569,
+   "atr": 0.18774115415390533,
+   "score": 63,
+   "reasons": [
+    "+5 searah bias BTC",
+    "+8 candle trigger kuat"
+   ],
+   "size": {
+    "qty": 40.3962,
+    "notional_usd": 1758.04,
+    "leverage_x": 1.76,
+    "risk_usd": 10.0
+   },
    "status": "OPEN",
    "r": null,
    "bars": 0,
    "closed_at": null,
-   "created_at": "2026-11-26T03:06:18.025531+00:00"
+   "created_at": "2026-11-26T12:20:18.054354+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 7,
-   "win_rate": 57.1,
-   "avg_r": -0.082,
-   "total_r": -0.57,
-   "profit_factor": 0.84
+   "n": 8,
+   "win_rate": 62.5,
+   "avg_r": -0.037,
+   "total_r": -0.29,
+   "profit_factor": 0.92
   },
   "max_drawdown_r": 2.37,
   "equity_r": [
@@ -315,15 +350,16 @@
    1.419,
    1.801,
    0.653,
-   -0.574
+   -0.574,
+   -0.294
   ],
   "by_side": {
    "short": {
-    "n": 7,
-    "win_rate": 57.1,
-    "avg_r": -0.082,
-    "total_r": -0.57,
-    "profit_factor": 0.84
+    "n": 8,
+    "win_rate": 62.5,
+    "avg_r": -0.037,
+    "total_r": -0.29,
+    "profit_factor": 0.92
    }
   },
   "by_setup": {
@@ -335,11 +371,11 @@
     "profit_factor": 999.0
    },
    "level_sweep": {
-    "n": 2,
-    "win_rate": 0.0,
-    "avg_r": -1.216,
-    "total_r": -2.43,
-    "profit_factor": 0.0
+    "n": 3,
+    "win_rate": 33.3,
+    "avg_r": -0.717,
+    "total_r": -2.15,
+    "profit_factor": 0.11
    },
    "squeeze_expansion": {
     "n": 4,
@@ -358,11 +394,11 @@
     "profit_factor": 999.0
    },
    "ETHUSDT": {
-    "n": 1,
-    "win_rate": 0.0,
-    "avg_r": -1.148,
-    "total_r": -1.15,
-    "profit_factor": 0.0
+    "n": 2,
+    "win_rate": 50.0,
+    "avg_r": -0.434,
+    "total_r": -0.87,
+    "profit_factor": 0.24
    },
    "HBARUSDT": {
     "n": 1,
