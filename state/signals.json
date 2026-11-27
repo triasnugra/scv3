@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T03:52:34.062243+00:00",
+ "updated": "2026-11-27T13:18:47.766978+00:00",
  "mode": "live",
  "signals": [
   {
@@ -366,22 +366,22 @@
     "leverage_x": 0.77,
     "risk_usd": 10.0
    },
-   "status": "OPEN",
-   "r": null,
-   "bars": 0,
-   "closed_at": null,
+   "status": "LOSS",
+   "r": -1.1231,
+   "bars": 14,
+   "closed_at": "2026-11-27T07:00:00+00:00",
    "created_at": "2026-11-27T03:52:34.062243+00:00"
   }
  ],
  "stats": {
   "overall": {
-   "n": 9,
-   "win_rate": 55.6,
-   "avg_r": -0.175,
-   "total_r": -1.58,
-   "profit_factor": 0.68
+   "n": 10,
+   "win_rate": 50.0,
+   "avg_r": -0.27,
+   "total_r": -2.7,
+   "profit_factor": 0.55
   },
-  "max_drawdown_r": 3.38,
+  "max_drawdown_r": 4.5,
   "equity_r": [
    -1.205,
    -0.439,
@@ -391,15 +391,16 @@
    0.653,
    -0.574,
    -0.294,
-   -1.575
+   -1.575,
+   -2.699
   ],
   "by_side": {
    "short": {
-    "n": 9,
-    "win_rate": 55.6,
-    "avg_r": -0.175,
-    "total_r": -1.58,
-    "profit_factor": 0.68
+    "n": 10,
+    "win_rate": 50.0,
+    "avg_r": -0.27,
+    "total_r": -2.7,
+    "profit_factor": 0.55
    }
   },
   "by_setup": {
@@ -411,11 +412,11 @@
     "profit_factor": 999.0
    },
    "level_sweep": {
-    "n": 4,
-    "win_rate": 25.0,
-    "avg_r": -0.858,
-    "total_r": -3.43,
-    "profit_factor": 0.08
+    "n": 5,
+    "win_rate": 20.0,
+    "avg_r": -0.911,
+    "total_r": -4.56,
+    "profit_factor": 0.06
    },
    "squeeze_expansion": {
     "n": 4,
@@ -462,11 +463,11 @@
     "profit_factor": 0.0
    },
    "PEPEUSDT": {
-    "n": 1,
-    "win_rate": 100.0,
-    "avg_r": 0.382,
-    "total_r": 0.38,
-    "profit_factor": 999.0
+    "n": 2,
+    "win_rate": 50.0,
+    "avg_r": -0.371,
+    "total_r": -0.74,
+    "profit_factor": 0.34
    },
    "XRPUSDT": {
     "n": 2,
