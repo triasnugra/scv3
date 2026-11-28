@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T22:11:23.776517+00:00",
+ "updated": "2026-11-28T03:53:39.067869+00:00",
  "mode": "live",
  "signals": [
   {
@@ -371,6 +371,79 @@
    "bars": 14,
    "closed_at": "2026-11-27T07:00:00+00:00",
    "created_at": "2026-11-27T03:52:34.062243+00:00"
+  },
+  {
+   "id": "PEPEUSDT-squeeze_expansion-short-202611280315",
+   "symbol": "PEPEUSDT",
+   "setup": "squeeze_expansion",
+   "side": "short",
+   "level_name": "BB Lower",
+   "ts": "2026-11-28T03:15:00+00:00",
+   "bar_close": "2026-11-28T03:30:00+00:00",
+   "entry": 3.5e-06,
+   "sl": 3.5467723261770886e-06,
+   "tp1": 3.4e-06,
+   "tp2": 3.31e-06,
+   "rr1": 2.14,
+   "rr2": 4.06,
+   "tp1_basis": "PDL",
+   "tp2_basis": "Monday Low",
+   "sl_pct": 1.336,
+   "atr": 2.6361630885443978e-08,
+   "score": 76,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+8 candle trigger kuat",
+    "+8 RR TP2 4.1"
+   ],
+   "size": {
+    "qty": 213802000.0,
+    "notional_usd": 748.31,
+    "leverage_x": 0.75,
+    "risk_usd": 10.0
+   },
+   "status": "OPEN",
+   "r": null,
+   "bars": 0,
+   "closed_at": null,
+   "created_at": "2026-11-28T03:53:39.067869+00:00"
+  },
+  {
+   "id": "INJUSDT-squeeze_expansion-short-202611280315",
+   "symbol": "INJUSDT",
+   "setup": "squeeze_expansion",
+   "side": "short",
+   "level_name": "BB Lower",
+   "ts": "2026-11-28T03:15:00+00:00",
+   "bar_close": "2026-11-28T03:30:00+00:00",
+   "entry": 6.241,
+   "sl": 6.316923625900153,
+   "tp1": 6.163,
+   "tp2": 6.076,
+   "rr1": 1.03,
+   "rr2": 2.17,
+   "tp1_basis": "PDL",
+   "tp2_basis": "Monday Low",
+   "sl_pct": 1.217,
+   "atr": 0.035368129500764144,
+   "score": 68,
+   "reasons": [
+    "+10 searah bias H4",
+    "+5 searah bias BTC",
+    "+8 candle trigger kuat"
+   ],
+   "size": {
+    "qty": 131.711,
+    "notional_usd": 822.01,
+    "leverage_x": 0.82,
+    "risk_usd": 10.0
+   },
+   "status": "OPEN",
+   "r": null,
+   "bars": 0,
+   "closed_at": null,
+   "created_at": "2026-11-28T03:53:39.067869+00:00"
   }
  ],
  "stats": {
